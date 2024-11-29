@@ -117,3 +117,41 @@ Si estas en la carpeta raiz (ecomerce) ejecutar los comando:
     npm start
 ```
 ## Funcionalidad del sistema
+
+### Requisitos previos
+
+Antes de comenzar, asegúrate de tener instalado postman
+
+- **Postman**: [Descargar Postman](https://www.postman.com/)
+
+### Prueba Post
+
+Abre Postman y selecciona el endpoint POST para registrar usuario.
+
+![Registro](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Post.png?raw=true)
+
+Luego Inciamos seccion con el usuario que acabas de registrar
+
+![IniciarSesion](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Iniciarsesion.png?raw=true)
+
+Es necesario, agrega el token de autorización (por ejemplo, Authorization: Bearer {token}).
+
+![BearerToken](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Bearer%20Token.png?raw=true)
+
+### Prueba Get
+
+Usamos el metodo GET para visualizar todos los productos dentro de la base de datos
+
+![Get](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Get.png?raw=true)
+
+### Prueba Put
+
+Usamos el metodo PUT para cambiar la descripcion de un producto dentro de la base de datos
+
+![Put](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Put.png?raw=true)
+
+### Prueba Delete
+
+Usamos el metodo GET para eliminar un producto de la base de datos
+
+![Delete](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Delete.png?raw=true)
