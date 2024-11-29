@@ -1,15 +1,12 @@
+# E-Commerce
 
-# E-Comerce
-
-Tienda en linea de tecnologia para realizar operaciones basicas create, read, update and delete (CRUD) usando Node.js, Express, MongoDB, Postgresql para la parte del servidor y React para la interfaz del usuario.
-
+Tienda en línea de tecnología para realizar operaciones básicas de creación, lectura, actualización y eliminación (CRUD) usando Node.js, Express, MongoDB, PostgreSQL para la parte del servidor y React para la interfaz del usuario.
 
 
 
+## Creación del Proyecto
 
-## Creacion del Proyecto
-
-### Backend (Node.js, Express, PostgreSQL y MongoD)
+### Backend (Node.js, Express, PostgreSQL y MongoDB)
 
 Este proyecto utiliza **Node.js** como entorno de ejecución, **Express** como framework de backend, **PostgreSQL** para la base de datos relacional y **MongoDB** para la base de datos NoSQL. A continuación, se describen los pasos para crear, configurar y ejecutar el proyecto.
 
@@ -23,9 +20,9 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas en tu
 
 ### Instalación
 
-Crear la carpeta del proyecto ecomerce y dentro de la carpeta crear nuestra primera carpeta backend, ingresamos a ella por medio de cmd. Ejecuta el siguiente comando para instalar las dependencias definidas en package.json.
+Crea la carpeta del proyecto `ecommerce` y dentro de la carpeta, crea nuestra primera subcarpeta llamada `backend`. Luego, ingresa a ella por medio de la terminal (cmd). Ejecuta el siguiente comando para instalar las dependencias definidas en `package.json`.
 
-1. Instala las dependencias de Node.js:
+1. Inicializa el proyecto de Node.js:
 
 ```bash
     npm init -y
@@ -40,22 +37,22 @@ Crear la carpeta del proyecto ecomerce y dentro de la carpeta crear nuestra prim
 ```bash
     npm install mongoose
 ```
-4. Instalar biblioteca para interactuar con PostgreSQL
+4. Instalar la biblioteca para interactuar con PostgreSQL:
 
 ```bash
     npm install pg
 ```
-5. Encripcion de la contraseña
+5. Encriptación de la contraseña:
 
 ```bash
     npm install bcryptjs
 ```
-6. Instalacion de la dependencia CORS
+6. Instalación de la dependencia CORS:
 
 ```bash
     npm install cors
 ```
-7. Instalacion de la dependencia JsonWebToken
+7. Instalación de la dependencia JsonWebToken:
 
 ```bash
     npm install jsonwebtoken
@@ -65,36 +62,34 @@ Crear la carpeta del proyecto ecomerce y dentro de la carpeta crear nuestra prim
 
 Este proyecto utiliza **React** para crear una interfaz de usuario interactiva y dinámica. A continuación, se detallan los pasos para configurar y ejecutar el proyecto.
 
-### Instalación
+## Instalación
 
 Sigue estos pasos para crear y ejecutar un proyecto React desde cero:
 
-Crear la carpeta dentro del proyecto ecomerce con el nombre frontend y ingresamos a ella por medio de cmd. Ejecuta el siguiente comando para instalar las dependencias definidas en package.json.
+Crea la carpeta dentro del proyecto `ecommerce` con el nombre `frontend` e ingresa a ella por medio de la terminal (cmd). Ejecuta el siguiente comando para instalar las dependencias definidas en `package.json`.
 
 1. Instalar React:
 
 ```bash
     Npx create-react-app frontend
 ```
-2. Instala las dependencias Axios, React-router-DOM y tailwind:
+2. Instalar las dependencias Axios, React-router-DOM y Tailwind:
 
 ```bash
     npm install axios react-router-dom npm i @material-tailwind/react
 ```
-3. Instalar el componente de React FontAwesome
+3. Instalar el componente de React FontAwesome:
 
 ```bash
     npm i --save @fortawesome/fontawesome-svg-core
     npm install --save @fortawesome/free-solid-svg-icons
     npm install --save @fortawesome/react-fontawesome
 ```
-
-
 ## Ejecución
 
 ### Backend
 
-Antes de Iniciar el servidor del proyecto, debemos tener abierto los servicios de PostgreSQL y MongoDB, luego ejecutar los siguiente comando en la terminal:
+Antes de iniciar el servidor del proyecto, debemos tener abiertos los servicios de PostgreSQL y MongoDB. Luego, ejecuta el siguiente comando en la terminal:
 
 ```pwsh
     cd backend
@@ -103,14 +98,14 @@ Antes de Iniciar el servidor del proyecto, debemos tener abierto los servicios d
 
 ### Frontend
 
-Ejecutar los siguiente comando en la terminal, si estas dentro de la carpeta backend:
+Ejecuta el siguiente comando en la terminal si estás dentro de la carpeta `backend`:
 
 ```pwsh
     cd..
     cd frontend
     npm start
 ```
-Si estas en la carpeta raiz (ecomerce) ejecutar los comando:
+Si estás en la carpeta raíz `ecomerce` ejecuta los siguientes comandos:
 
 ```pwsh
     cd frontend
@@ -126,32 +121,32 @@ Antes de comenzar, asegúrate de tener instalado postman
 
 ### Prueba Post
 
-Abre Postman y selecciona el endpoint POST para registrar usuario.
+Abre Postman y selecciona el endpoint **POST** para registrar usuario.
 
 ![Registro](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Post.png?raw=true)
 
-Luego Inciamos seccion con el usuario que acabas de registrar
+Luego, inicia sesión con el usuario que acabas de registrar.
 
 ![IniciarSesion](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Iniciarsesion.png?raw=true)
 
-Es necesario, agrega el token de autorización (por ejemplo, Authorization: Bearer {token}).
+Es necesario agregar el token de autorización (por ejemplo, `Authorization: Bearer {token}`).
 
 ![BearerToken](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Bearer%20Token.png?raw=true)
 
 ### Prueba Get
 
-Usamos el metodo GET para visualizar todos los productos dentro de la base de datos
+Usamos el método **GET** para visualizar todos los productos dentro de la base de datos.
 
 ![Get](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Get.png?raw=true)
 
 ### Prueba Put
 
-Usamos el metodo PUT para cambiar la descripcion de un producto dentro de la base de datos
+Usamos el método **PUT** para cambiar la descripción de un producto dentro de la base de datos.
 
 ![Put](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Put.png?raw=true)
 
 ### Prueba Delete
 
-Usamos el metodo GET para eliminar un producto de la base de datos
+Usamos el método **DELETE** para eliminar un producto de la base de datos.
 
 ![Delete](https://github.com/unknown6498/ecomerce/blob/main/screenshots/Delete.png?raw=true)
